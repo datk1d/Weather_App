@@ -9,6 +9,7 @@
     </title>
     <link rel='stylesheet' type='text/css' href='./style/reset.css'>
     <link rel='stylesheet' type='text/css' href='./style/style.css'>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -27,11 +28,20 @@
         <main id="lowerApp">
           <div id="location"></div>
           <div id="temp"></div>
-          <div id="min">
-            Min
-          </div>
-          <div id="max">
-            Max
+          <div id="status"></div>
+          <div id="info">
+            <div id="row">
+              <div id="min">
+                Min
+              </div>
+              <div id="max">
+                Max
+              </div>
+            </div>
+            <div id="infoRow">
+              <div id="minInfo" class="info"></div>
+              <div id="maxInfo" class="info"></div>
+            </div>
           </div>
         </main>
       </div>
