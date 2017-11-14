@@ -18,15 +18,12 @@ $(document).ready(() => {
     let $zip = $els.zipcode.val();
 
     scoopAPI($zip);
-    console.log($zip);
-
   });
 });
+
 function scoopAPI(zip) {
   $.getJSON(`http://api.openweathermap.org/data/2.5/weather?zip=${zip}&units=imperial&appid=3cccf32acba85a5d9c945458fd461663`, (data) => {
 
-
-    console.log(data);
     console.log('Successfully obtained')
     dataAssign(data);
   })
@@ -62,10 +59,6 @@ function domWetWork(locale, temp, status, min, max) {
   $els.lowerApp.css('animation', 'fadeIn 1.5s ease-out 1s forwards')
 }
 /*
-
-Here's an overview of the steps you'll follow to get your app to work...
-
-STEPS
 
 1. when the page loads
   - add an event listener to the button
